@@ -1,0 +1,48 @@
+# 🌐 Floyd–Warshall Algorithm in C
+
+## 📘 Project Overview
+This project implements the **Floyd–Warshall Algorithm** in **C language** to find the **shortest paths between all pairs of vertices** in a weighted graph.  
+It uses an adjacency matrix representation and computes the minimum distance between every pair of nodes.
+
+---
+
+## ⚙️ Features
+- ✅ Computes **all-pairs shortest paths** efficiently  
+- ✅ Handles **up to 100 nodes**  
+- ✅ Displays **INF** for unreachable nodes  
+- ✅ Works with **directed or undirected graphs**  
+- ✅ Easy to understand and modify  
+
+---
+
+## 🧩 Algorithm Workflow
+1. Initialize a distance matrix equal to the input adjacency matrix.  
+2. For each node `k`, update the shortest distance between every pair `(i, j)` using:
+   \[
+   dist[i][j] = \min(dist[i][j], dist[i][k] + dist[k][j])
+   \]
+3. Repeat for all nodes `k` to ensure all indirect paths are considered.  
+4. Print the final shortest path matrix.
+
+---
+
+
+---
+
+## 🧾 Input Format
+1. Enter the **number of nodes (n)**.  
+2. Enter the **adjacency matrix** of size `n x n`.  
+   - Each value `graph[i][j]` represents the **weight of the edge** from node `i` to node `j`.  
+   - Use `0` to represent **no edge** between two different nodes.  
+
+---
+
+---
+
+## ⚙️ Compilation & Execution
+
+### 🧠 Step 1: Compile
+```bash
+EXP5_c.exe
+
+
